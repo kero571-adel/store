@@ -1,0 +1,55 @@
+.account {
+    width: fit-content;
+    margin: 100px auto;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.account .profilepicture {
+    margin: 50px auto;
+    width: 110px;
+    height: 110px;
+    background: gray;
+    border-radius: 50%;
+    position: relative;
+}
+
+.account .profilepicture div {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.account > p:first-of-type {
+    font-size: xx-large !important;
+    font-weight: 600;
+}
+
+.account > div:nth-of-type(2) {
+    padding: 30px 20px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    text-align: start;
+    font-size: large;
+    color: #4b4b4b;
+}
+
+.account > button:first-of-type {
+    padding: 10px 30px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    outline: 0;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+@media (max-width:400px) {
+    .account > div:nth-of-type(2) {
+        font-size: 15px;
+    }
+  }

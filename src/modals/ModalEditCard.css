@@ -1,0 +1,136 @@
+.moadaleditcard {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #00000080;
+    z-index: 10;
+    overflow-y: auto;
+  }
+  
+  .moadaleditcard .table, 
+  .moadaleditcard table {
+    width: 60%;
+    margin: 100px auto;
+    text-align: center;
+  }
+  
+  .moadaleditcard table {
+    width: 100%;
+  }
+  
+  .moadaleditcard tbody tr td:first-of-type {
+    display: flex;
+    align-items: center;
+  }
+  
+  .moadaleditcard tbody tr td:first-of-type img {
+    margin: 20px 45px 20px 10px;
+    width: 70px;
+  }
+  
+  .moadaleditcard tbody tr td:nth-of-type(3) div {
+    display: flex;
+    width: fit-content;
+    margin: 10px auto;
+  }
+  
+  .moadaleditcard tbody tr td:nth-of-type(3) div button,
+  .moadaleditcard tbody tr td:nth-of-type(3) div input {
+    border: 1px solid gray;
+  }
+  
+  .moadaleditcard tbody tr td:nth-of-type(3) div button {
+    border-right: 0;
+    padding: 0 10px;
+    font-size: x-large;
+    cursor: pointer;
+  }
+  .moadaleditcard tbody tr td:nth-of-type(3) div button:last-of-type{
+    border-right: 1px solid gray;
+  }
+  .moadaleditcard tbody tr td:nth-of-type(3) div input {
+    width: 50px;
+    text-align: center;
+    outline: 0;
+    background: #dfd8d8;
+  }
+  input.no-arrow {
+    -moz-appearance: textfield;
+  }
+  
+  input.no-arrow::-webkit-outer-spin-button,
+  input.no-arrow::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .moadaleditcard tfoot button {
+    background: #dfd8d8;
+    color: black;
+    border: 0;
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin: 10px;
+    width: 45%;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+  
+  .moadaleditcard tfoot button:hover {
+    color: white;
+    background-color: cornflowerblue;
+  }
+  
+  .moadaleditcard tfoot button:first-of-type:hover {
+    background-color: rgb(233, 47, 47);
+  }
+  
+  .moadaleditcard tfoot button:last-of-type:hover {
+    background-color: cornflowerblue;
+  }
+  
+  .moadaleditcard tbody tr td:last-of-type:hover {
+    color: red;
+    cursor: pointer;
+  }
+  @media (max-width:1000px) {
+    .moadaleditcard .table{
+        width: 97%;
+    }
+  }
+  @media (max-width:600px) {
+    .moadaleditcard .table table,.moadaleditcard tbody tr td:nth-of-type(3) div button,.moadaleditcard tbody tr td:nth-of-type(3) div input{
+        font-size: 10px;
+    }
+    .moadaleditcard tbody tr td:nth-of-type(3) div button {
+        padding: 0 5px;
+    }
+    .moadaleditcard tbody tr td:nth-of-type(3) div input{
+        width: 20px;
+
+    }
+  }
+  @media (max-width:500px) {
+    .moadaleditcard tbody tr td:first-of-type img{
+        margin: 20px 10px 20px 10px;
+    }
+  }
+  @media (max-width:380px) {
+    .moadaleditcard .table table{
+        font-size: 10px;
+    }
+    .moadaleditcard tbody tr td:nth-of-type(3) div button {
+        padding: 0 2px;
+    }
+    .moadaleditcard tbody tr td:nth-of-type(3) div input{
+        width: 20px;
+    }
+    .moadaleditcard tbody tr td:first-of-type img{
+        width: 40px;
+    }
+    .moadaleditcard tfoot button {
+        width: 70%;
+    }
+  }

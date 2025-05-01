@@ -1,0 +1,76 @@
+.aboutcontent{
+    width: 85%;
+    margin: 50px auto;
+}
+.about{
+    position: relative;
+    margin-top: 90px;
+}
+.about img{
+    width: 100%;
+}
+.about div:last-child{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+.aboutcontent .ourMission{
+    margin: 55px 0;
+}
+.aboutcontent .ourStore,.aboutcontent .ourMission{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.aboutcontent  .ourStore > div:first-child h1,.aboutcontent  .ourMission > div:last-child h1{
+    margin-top: 30px;
+}
+.aboutcontent  .ourStore > div:first-child p,.aboutcontent  .ourMission > div:last-child p{
+    color: #757474;
+}
+.aboutcontent  .ourStore > div:first-child,.aboutcontent  .ourMission > div:last-child{
+    width: 55%;
+}
+.aboutcontent  .ourStore > div:last-child,.aboutcontent  .ourMission > div:first-child{
+    width: 500px;
+}
+.aboutcontent  .ourStore > div:last-child{
+    margin-left: 10px;
+}
+.aboutcontent  .ourStore > div:last-child,.aboutcontent  .ourMission > div:first-child{
+    position: relative;
+}
+.aboutcontent  .ourStore > div:last-child img,.aboutcontent  .ourMission > div:first-child img{
+    width: 95%;
+}
+.aboutcontent  .ourStore > div:last-child img,.aboutcontent  .ourMission > div:first-child img{
+    width: 95%;
+}
+.aboutcontent  .ourStore > div:last-child div,.aboutcontent  .ourMission > div:first-child div{
+    position: absolute;
+    width: 95%;
+    border: 3px #d5d0d0 solid;
+    height: 100%;
+    left: -20px;
+    bottom: -20px;
+    z-index: -1;
+}
+.aboutcontent  .ourMission > div:first-child div{
+    left: 0;
+    transform: translateX(20px);
+}
+@media (max-width:1388px) {
+    .about{
+        margin-top: 0;
+    }
+}
+@media (max-width:655px){
+    .aboutcontent  .ourStore > div:last-child,.aboutcontent  .ourMission > div:first-child{
+        width: 350px;
+    }
+}

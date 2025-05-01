@@ -1,0 +1,231 @@
+.xsquare{
+    background: transparent;
+    border: 0;
+    width: 100%;
+    text-align: end;
+}
+.xsquare svg{
+    width: 35px;
+    height: 35px;
+    color: rgb(216, 30, 30);
+}
+.xsquare svg:hover{
+    color: white;
+}
+.modalQuackView{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background:#00000080;
+    z-index: 3;
+    padding:20px 50px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+.modalQuackView .modalQuackViewContent{
+    display:flex;
+    width:100%;
+    background:white;
+    padding:20px;
+    height:90%;
+    overflow-y:auto;
+    overflow-x:hidden;
+    flex-wrap:wrap;
+}
+.modalQuackView .viewItem{
+    width:50%;
+    display:flex;
+    justify-content:space-batween;
+    margin:auto;
+}
+.modalQuackView .viewItem .pictures{
+    width: 25%;
+}
+.modalQuackView .viewItem .pictures img{
+    margin: 0px auto 15px;
+    width: 50%;
+}
+.modalQuackView .viewItem .cursol{
+    width: 73%;
+}
+.modalQuackView .viewItem .carousel{
+    width: 95% !important;
+}
+.modalQuackView .viewItem .carousel .carousel-item{
+    position: relative;
+}
+.modalQuackView .viewItem .carousel .carousel-item button{
+    position:absolute;
+    top:15px;
+    right:15px;
+    border:0;
+    border-radius:50%;
+    background:white;
+    color:black;
+    width:auto;
+    padding:10px;
+}
+.modalQuackView input.no-arrow::-webkit-outer-spin-button,.modalQuackView input.no-arrow::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+.modalQuackView .addCard {
+    width:50%;
+    height:85%;
+    margin:auto;
+    padding:30px
+}
+.modalQuackView .addCard label{
+    margin-right: 32px;
+    font-size: larger;
+    color: gray;
+    font-weight: 600;
+}
+.modalQuackView .addCard .form-select{
+    padding:10px !important;
+    width:300px !important;
+    display:inline-block !important;
+    margin:10px 0;
+}
+.modalQuackView .addCard .addAndMinusItemCArd{
+    display:flex;
+    width: fit-content;
+    margin: 10px auto;
+}
+.modalQuackView .addCard .addAndMinusItemCArd button{
+    border:1px gray solid;
+    border-right:0;
+    padding: 0px 10px;
+    font-size: x-large;
+    cursor:pointer;
+}
+.modalQuackView .addCard .addAndMinusItemCArd input{
+    width:50px;
+    text-align:center;
+    outline:0;
+    background:#dfd8d8;
+    border: 1px solid gray;
+}
+.modalQuackView .addCard .addcardbutton{
+    width: fit-content;
+    border-radius: 30px;
+    padding: 15px 30px;
+    background: #23b9d1;
+    margin: 20px 0;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+.modalQuackView .addCard .icon svg{
+    width: 20px;
+    height: 20px;
+    margin: 0 15px 10px;
+}
+.modalQuackView .addCard .icon svg:hover{
+    color: #23b9d1;
+}
+@media (max-width: 344px) {
+    .modalQuackView .viewItem .carousel-item button{
+       padding: 2px !important;
+       top: 5px !important;
+       right: 5px !important;
+    }
+    .modalQuackView .viewItem .carousel-item .maximize2{
+        width: 10px;
+        height: 10px;
+    }
+    .modalQuackView .addCard{
+        text-align: center;
+        padding: 20px 0px !important;
+    }
+    .modalQuackView .addCard .form label{
+        margin-right: 5px !important;
+    }
+    .modalQuackView .addCard .form select{
+        width: 65% !important;
+    }
+    .modalQuackView .addCard .form select::placeholder{
+        font-size: medium !important;
+    }
+    .modalQuackView .addCard .form button{
+        font-size: large !important;
+        padding: 10px 20px !important;
+    }
+}
+@media (min-width: 344px) {
+    .modalQuackView .viewItem .carousel-item button{
+       padding: 2px !important;
+       top: 5px !important;
+       right: 5px !important;
+    }
+    .modalQuackView .viewItem .carousel-item .maximize2{
+        width: 10px;
+        height: 10px;
+    }
+    .modalQuackView .addCard{
+        text-align: center;
+        padding: 20px 0px !important;
+    }
+    .modalQuackView .addCard .form label{
+        margin-right: 5px !important;
+    }
+    .modalQuackView .addCard .form select{
+        width: 65% !important;
+    }
+    .modalQuackView .addCard .form select::placeholder{
+        font-size: medium !important;
+    }
+    .modalQuackView .addCard .form button{
+        font-size: large !important;
+        padding: 10px 20px !important;
+    }
+}
+@media (min-width: 360px) {
+    .modalQuackView .viewItem .carousel-item button{
+       padding: 5px !important;
+       top: 7px !important;
+       right: 7px !important;
+    }
+    .modalQuackView .viewItem .carousel-item .maximize2{
+        width: 15px;
+        height: 15px;
+    }
+    .modalQuackView .addCard .form label{
+        margin-right: 10px !important;
+    }
+    .modalQuackView .addCard .form select{
+        width: 50% !important;
+    }
+    .modalQuackView .addCard .form select{
+        width: 50% !important;
+    }
+    .modalQuackView .addCard .form select::placeholder{
+        font-size: medium !important;
+    }
+    .modalQuackView .addCard .form button{
+        font-size: large !important;
+        padding: 10px 20px !important;
+    }
+}
+@media (min-width: 770px) {
+    .modalQuackView .viewItem .carousel-item button{
+        padding: 10px !important;
+        top: 15px !important;
+        right: 15px !important;
+    }
+    .modalQuackView .viewItem .carousel-item .maximize2{
+        width: 25px !important;
+        height: 25px !important;
+    }
+    .modalQuackView .addCard{
+        text-align: start;
+        padding: 30px !important;
+    }
+}
+@media (max-width:1000px){
+    .modalQuackView .addCard,
+    .modalQuackView .viewItem{
+        width: 100% !important;
+    }
+}

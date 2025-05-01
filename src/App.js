@@ -20,7 +20,7 @@ function App() {
   const { itemsWithCardCount, itemsWithFavCount , profile} = useCon();
   const [showorHide, setshoworHide] = useState("0px");
   const [backgrNav, setbackgrNav] = useState("");
-  const [ClichScrollTop, setClichScrollTop] = useState("none");
+  const [ClichScrollTop, setClichScrollTop] = useState("0");
   const[cardNav,setCardNav]=useState("hide");
   const location = useLocation();
   const currentPath = location.pathname;
@@ -33,12 +33,15 @@ function App() {
     setbackgrNav("white");
     if (document.documentElement.scrollTop === 0) {
       setbackgrNav("transparent");
+      setClichScrollTop("0");
     }
     if(document.documentElement.scrollTop >= 500){
-      setClichScrollTop("");
+      setClichScrollTop("1");
     }
   };
-
+  function ClichScrollTopFun(){
+    window.scrollTo({top:0})
+  }
   const getColor = (path) => (currentPath === path ? "rgb(0, 115, 255)" : "");
 
   return (
@@ -112,14 +115,10 @@ function App() {
         <CardList cardNav={cardNav} setCardNav={setCardNav} />
         <Footer />
       </Suspense>
-      <div> 
-        <button class="button">
-          <svg class="svgIcon" viewBox="0 0 384 512">
-            <path
-              d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
-            ></path>
-          </svg>
-        </button>
+      <div className='ClichScrollTop' style={{opacity:ClichScrollTop}} onClick={()=>{ClichScrollTopFun()}}>
+      <button class="ClichScrollTopButton">
+        <svg height="1.2em" class="arrow" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg>
+      </button>
     </div>
     </>
   );

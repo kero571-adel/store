@@ -1,0 +1,72 @@
+/*footer*/
+footer{
+    background-color: #131212;
+    padding: 50px;
+}
+footer > div > div{ 
+    padding: 0 20px;
+}
+footer > div:first-child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer div:first-child div{
+    color: rgb(161, 159, 159);
+    text-align: start;
+    margin-top: 20px;
+}
+footer div:first-child div div{
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+footer div:first-child div button{
+    display: block;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    font-size: large;
+    padding: 0;
+    margin-top: 20px;
+    color: rgb(161, 159, 159);
+}
+footer div:first-child div button:hover{
+    color: rgba(21, 47, 243, 0.456);
+}
+footer > div:first-child .newsLetter button{
+    background-color: rgb(79, 93, 200);
+    padding: 10px 20px;
+    color: white !important;
+    border-radius: 15px;
+}
+footer > div:first-child .newsLetter input{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px rgb(161, 159, 159) solid;
+    margin: 50px 0 25px;
+    color: white;
+    padding: 5px 2px;
+    width: 300px;
+}
+footer > div:first-child .getInTouch p{
+    width: 300px;
+    margin: 20px 0 10px;
+}
+footer div:last-child{
+    text-align: center;
+    padding: 23px 0;
+}
+footer div:last-child p{
+    font-size: larger;
+    margin-top: 25px;
+    color: #919090;
+}
+/*footer*/
+@media (max-width:655px){
+    footer > div:first-child .getInTouch p,footer > div:first-child .newsLetter input{
+        width: 250px;
+    }
+}

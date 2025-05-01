@@ -1,0 +1,133 @@
+.viewcard {
+    display: flex;
+    margin: 100px auto;
+    justify-content: space-evenly;
+    width: 85%;
+}
+
+.viewcard .table {
+    width: 60%;
+}
+
+.viewcard .table table {
+    text-align: center;
+    width: 100%;
+}
+
+.viewcard .table table tfoot input {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    outline: none;
+    margin: 10px 20px;
+    width: 200px;
+}
+
+.viewcard .table table tfoot button {
+    background: #dfd8d8;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 11px 15px;
+    margin: 10px 20px;
+    width: 200px;
+    cursor: pointer;
+}
+.viewcard .table table tfoot button:hover{
+    background-color: rgb(75, 184, 243);
+    color: white;
+}
+.viewcard .carttotals {
+    border: 1px solid black;
+    padding: 30px;
+    width: 35%;
+}
+
+.viewcard .carttotals .total{
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+.viewcard .carttotals .total p {
+    font-weight: 500;
+    font-size: large;
+}
+
+.viewcard .carttotals .proceedOrder > div:first-of-type{
+    display: flex;
+    margin: 25px 0;
+    border-bottom: 1px solid black;
+}
+
+.viewcard .carttotals  .proceedOrder > div:first-of-type input {
+    width: 135%;
+    padding: 10px;
+    margin: 10px 0;
+    font: 400 1rem/1.5 sans-serif;
+    color: var(--bs-body-color);
+    background: var(--bs-body-bg);
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    outline: none;
+}
+
+.viewcard .carttotals  .proceedOrder > div:last-of-type p {
+    font-weight: 500;
+    font-size: large;
+}
+
+.viewcard .carttotals  .proceedOrder > div:last-of-type button {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    outline: none;
+    color: white;
+    background: black;
+    width: 100%;
+    font-size: larger;
+    cursor: pointer;
+}
+@media (max-width:1388px) {
+    .viewcard{
+        margin-top: 0;
+    }
+}
+/* استجابات الشاشة */
+@media (max-width: 1200px) {
+    .viewcard {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .viewcard .table {
+        width: 100%;
+    }
+    .viewcard .carttotals {
+        width: 60%;
+    }
+}
+
+@media (max-width: 610px) {
+    .viewcard .carttotals {
+        width: 100%;
+    }
+    .viewcard {
+        width: 99%;
+    }
+    .viewcard .table {
+        font-size: 10px;
+    }
+    .viewcard .table table tbody tr td:nth-of-type(2) {
+        padding: 0;
+    }
+}
+
+@media (max-width: 344px) {
+    .viewcard .table {
+        font: 500 8px/normal sans-serif;
+    }
+    .viewcard .table table tbody tr td {
+        padding: 0;
+    }
+}

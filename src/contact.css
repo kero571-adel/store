@@ -1,0 +1,75 @@
+.contact{
+    position: relative;
+    margin-top: 90px;
+}
+.contact img{
+    width: 100%;
+}
+.Comcontactcontent{
+    width: 85%;
+    margin: 50px auto;
+}
+.contact div:last-child{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+.Comcontactcontent .contactBody{
+    display: flex;
+    justify-content: center;
+    margin: 200px 0;
+    flex-wrap: wrap;
+}
+.Comcontactcontent .contactBody > div{
+    border: 2px gray solid;
+    padding: 50px;
+    width: 600px;
+    font-size: large;
+    font-weight: 600;
+    margin-top: 25px;
+}
+.Comcontactcontent .contactBody > div:first-child button{
+    padding: 10px 30px;
+    font-size: larger;
+    font-weight: 700;
+}
+.Comcontactcontent .contactBody > div:first-child .submit{
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.Comcontactcontent .contactBody > div:last-child p{
+    margin: 20px 0 30px;
+}
+.Comcontactcontent .contactBody > div:last-child p:first-of-type{
+    color: #8f8d8d;
+}
+.Comcontactcontent .contactBody > div:last-child p:nth-of-type(2),.Comcontactcontent .contactBody > div:last-child p:nth-of-type(3){
+    color: rgb(0, 128, 255);
+}
+@media (max-width:1388px) {
+    .contact{
+        margin-top: 0;
+    }
+}
+@media (max-width:655px){
+    .Comcontactcontent .contactBody > div{
+        width: 500px;
+        padding: 50px;
+    }
+}
+@media (max-width: 480px) {
+    .Comcontactcontent .contactBody > div{
+        width: 350px;
+        padding: 30px;
+    }
+}
