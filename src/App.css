@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+*{
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+    color: black !important;
+    text-decoration: none !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+nav{
+    position: fixed;
+    top: 0px;
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    width: 100%;
+    z-index: 2;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  nav .navcontent,nav .navcontent .iconNavAndBtn .iconNav{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
   }
-  to {
-    transform: rotate(360deg);
+  nav .navcontent .logo{
+    font-size: x-large !important;
+    width: 20%;
   }
-}
+  nav .navcontent .iconNavAndBtn{
+    display: flex;
+    width: 20%;
+  }
+  nav .navcontent .iconNavAndBtn .iconNav{
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  nav .navcontent .iconNavAndBtn .iconNav div{
+    cursor: pointer;
+    position: relative;
+    width: min-content;
+  }
+  nav .navcontent .iconNavAndBtn .iconNav div p{
+    position: absolute;
+    top: -15px;
+    right: -8px;
+    color: red;
+    font-size: larger;
+    font-weight: bold;
+  }
+  nav .navcontent .iconNavAndBtn .iconNav div:hover{
+    color: rgb(0, 115, 255) !important;
+  }
+  nav .navcontent .links div,nav .linksHidden div{
+    font-weight: 600;
+    font-size: large;
+    width: min-content;
+    text-align: center;
+    cursor: pointer;
+  }
+  nav .navcontent .links{
+    display: flex;
+    width: 60%;
+  }
+  nav .navcontent .links div{
+    margin: 0 20px;
+  }
+  nav .linksHidden div{
+    margin: 15px auto;
+  }
+  nav .navcontent .links div:hover{
+    color: rgb(0, 115, 255) !important;
+  }
+  nav .linksHidden a:hover{
+    color: rgb(0, 115, 255) !important;
+  }
+  nav .navcontent .navbtn{
+    display: none;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000072;
+    border-radius: 10px;
+  }
+  nav .navcontent .navbtn:hover{
+    background-color: rgba(23, 22, 22, 0.771);
+  }
+  nav .navcontent .navbtn div{
+    background: white;
+    width: 23px;
+    height: 3px;
+    margin: 2px 2px;
+    border-radius: 10px;
+  }
+  @media (min-width:1388.1px) {
+    nav .linksHidden{
+      display: none;
+    }
+  }
+  @media (max-width:1388px) {
+    nav .navcontent .navbtn{
+      display: flex;
+    }
+    nav .navcontent .links{
+      display: none;
+    }
+    nav{
+      position: sticky;
+    }
+    nav .navcontent .iconNavAndBtn,nav .navcontent .iconNavAndBtn .iconNav{
+      width: 35%;
+      justify-content: space-between;
+    }
+    nav .navcontent .iconNavAndBtn .iconNav{
+      width: 40%;
+    }
+  }
+  @media (max-width: 1100px) {
+    nav .navcontent .iconNavAndBtn,nav .navcontent .iconNavAndBtn .iconNav{
+      width: 40%;
+    }
+  }
+  @media (max-width: 876px) {
+    nav .navcontent .logo{
+      width: 45%;
+    }
+    nav .navcontent .iconNavAndBtn,nav .navcontent .iconNavAndBtn .iconNav{
+      width: 45%;
+    }  
+  }
+  @media (max-width: 700px) {
+    nav .navcontent .iconNavAndBtn,nav .navcontent .iconNavAndBtn .iconNav{
+      width: 55%;
+    }
+  }
+  @media (max-width: 567px) {
+    nav .navcontent .iconNavAndBtn,nav .navcontent .iconNavAndBtn .iconNav{
+      width: 62%;
+    }  
+    nav .navcontent {
+      width: 90%;
+    }
+    nav .navcontent .logo{
+      font-size: medium !important;
+      width: 28%;
+    }
+  }
