@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-
 const AppWrapper = ({ children }) => {
   const location = useLocation();
   const [loading, setLoading] = useState(false);
@@ -20,26 +19,17 @@ const AppWrapper = ({ children }) => {
         borderRadius: '50%',
         animation: 'spin 1s linear infinite'
       }} />
-      <style>{`
-        @keyframes spin {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
-        }
-      `}</style>
     </div>
   );
-  
-
   useEffect(() => {
     setLoading(true);
-    // تحاكي تحميل البيانات أو تنقل الصفحة البطيء
+    // تحاكي تحميل البيانات أو تنقل الصفحة البطيء   
     const timeout = setTimeout(() => {
       setLoading(false);
     }, 400);
 
     return () => clearTimeout(timeout);
   }, [location]);
-
   return (
     <>
       {loading && <Loader />}
@@ -47,5 +37,4 @@ const AppWrapper = ({ children }) => {
     </>
   );
 };
-
 export default AppWrapper;

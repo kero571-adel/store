@@ -15,12 +15,11 @@ const Footer = lazy(() => import('./footer'));
 const ViewCard = lazy(() => import('./viewCard'));
 const CardList = lazy(() => import('./cardList'));
 const HeartList = lazy(() => import('./HeartList'));
-
 function App() {
-  const { itemsWithCardCount, itemsWithFavCount , profile} = useCon();
-  const [showorHide, setshoworHide] = useState("0px");
-  const [backgrNav, setbackgrNav] = useState("");
-  const [ClichScrollTop, setClichScrollTop] = useState("0");
+  const{ itemsWithCardCount, itemsWithFavCount , profile} = useCon();
+  const[showorHide, setshoworHide] = useState("0px");
+  const[backgrNav, setbackgrNav] = useState("");
+  const[ClichScrollTop, setClichScrollTop] = useState("0");
   const[cardNav,setCardNav]=useState("hide");
   const location = useLocation();
   const currentPath = location.pathname;
@@ -103,13 +102,13 @@ function App() {
       </nav>
       <Suspense fallback={<div className="loading">Loading...</div>}>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/shop' element={<Shop />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/account' element={<Account />} />
-          <Route path='/viewcard' element={<ViewCard />} />
-          <Route path='/heartlist' element={<HeartList />} />
+          <Route path='/' element={<Home/>} />
+          <Route path='/shop' element={<Shop/>} />
+          <Route path='/about' element={<About/>} />
+          <Route path='/contact' element={<Contact/>} />
+          <Route path='/account' element={<Account/>} />
+          <Route path='/viewcard' element={<ViewCard/>} />
+          <Route path='/heartlist' element={<HeartList/>} />
           <Route path='*' element={<Error />} />
         </Routes>
         <CardList cardNav={cardNav} setCardNav={setCardNav} />
@@ -117,11 +116,10 @@ function App() {
       </Suspense>
       <div className='ClichScrollTop' style={{opacity:ClichScrollTop}} onClick={()=>{ClichScrollTopFun()}}>
       <button class="ClichScrollTopButton">
-        <svg height="1.2em" class="arrow" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg>
+        <svg height="1.2em" className="arrow" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg>
       </button>
     </div>
     </>
   );
 }
-
 export default App;

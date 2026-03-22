@@ -93,9 +93,7 @@ nav{
     margin: 2px 2px;
     border-radius: 10px;
   }
-
-
-  /* From Uiverse.io by vinodjangid07 */ 
+  /* From Uiverse.io by vinodjangid07 */
   .ClichScrollTop{
     position: fixed;
     bottom: 30px;
@@ -184,4 +182,4 @@ nav{
       font-size: medium !important;
       width: 28%;
     }
-  }
+  } 

@@ -10,13 +10,13 @@ import AppWrapper from './AppWrapper';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ContextCom>
-      <AppWrapper>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-    </AppWrapper>
-    </ContextCom>
+    <BrowserRouter>
+      <ContextCom>
+        <AppWrapper>
+            <App />
+        </AppWrapper>
+      </ContextCom>
+    </BrowserRouter>
   </React.StrictMode>
 );
 reportWebVitals();
